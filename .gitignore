@@ -1,0 +1,19 @@
+
+#### `.gitignore`
+
+The `.gitignore` file will ensure sensitive or unnecessary files (like AWS credentials, Python bytecode, etc.) are not committed to the repository.
+
+```bash
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# AWS credentials
+.aws/
